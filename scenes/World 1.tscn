@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dltqory4o1xju"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xnt5j"]
+
+[node name="World 1" type="Node3D" unique_id=1916083544]
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=2065262130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.18, -1.535, 0)
+use_collision = true
+size = Vector3(4.175, 6.524, 3.17)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=1605951558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.2, -1.535, 0)
+use_collision = true
+size = Vector3(1, 6.524414, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=2132557830]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.72, -1.535, 0)
+use_collision = true
+size = Vector3(1, 6.524414, 1)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1258406613]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.089, -1.535, 0)
+use_collision = true
+size = Vector3(2.715, 6.524, 2.935)
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=752450390]
+use_collision = true
+
+[node name="Room 1" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1386266515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.725, 0)
+use_collision = true
+flip_faces = true
+size = Vector3(100, 20, 20)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=40201145]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.77, -1.765, 0)
+flip_faces = true
+size = Vector3(13.285, 7.345, 19.959)
+material = SubResource("StandardMaterial3D_xnt5j")

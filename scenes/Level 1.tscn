@@ -1,0 +1,394 @@
+[gd_scene format=3 uid="uid://3bj4q2hq3e2l"]
+
+[ext_resource type="PackedScene" uid="uid://bjvvc4yryfqdq" path="res://scenes/Player.tscn" id="1_ymo8b"]
+[ext_resource type="PackedScene" uid="uid://dltqory4o1xju" path="res://scenes/World 1.tscn" id="2_gpsl1"]
+[ext_resource type="PackedScene" uid="uid://dcouf5ebbfrlk" path="res://scenes/Lamp.tscn" id="2_kbmnf"]
+[ext_resource type="PackedScene" uid="uid://30latlwbnave" path="res://scenes/Area Trigger.tscn" id="3_gpsl1"]
+
+[node name="Level 1" type="Node3D" unique_id=1856493535]
+
+[node name="Player" parent="." unique_id=867878046 instance=ExtResource("1_ymo8b")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 47.836815, 3.9811811, 3.2142386)
+
+[node name="World 1" parent="." unique_id=1916083544 instance=ExtResource("2_gpsl1")]
+
+[node name="Area3D" parent="." unique_id=95916073 instance=ExtResource("3_gpsl1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.585, -14.84, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1926825306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 20, 0)
+omni_range = 85.111
+
+[node name="Lamp" type="Node3D" parent="." unique_id=230836246]
+
+[node name="Node3D3" type="Node3D" parent="Lamp" unique_id=224651510]
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D3" unique_id=1460471008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.895, 0, 0)
+
+[node name="Node3D4" type="Node3D" parent="Lamp/Node3D3/Node3D2" unique_id=450969547]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.025, 0, 0)
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D3/Node3D2/Node3D4" unique_id=863149186]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 22, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D3/Node3D2/Node3D4/Node3D" unique_id=1893891516 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D2/Node3D4/Node3D/lamp" unique_id=2135705780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D3/Node3D2/Node3D4/Node3D" unique_id=1564129872 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D2/Node3D4/Node3D/lamp2" unique_id=1267925593]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D3/Node3D2/Node3D4" unique_id=1462650313]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 18.525, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D3/Node3D2/Node3D4/Node3D2" unique_id=1875247990 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D2/Node3D4/Node3D2/lamp" unique_id=1813801074]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D3/Node3D2/Node3D4/Node3D2" unique_id=1547954434 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D2/Node3D4/Node3D2/lamp2" unique_id=1867063838]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D3" type="Node3D" parent="Lamp/Node3D3/Node3D2" unique_id=833899213]
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D3/Node3D2/Node3D3" unique_id=1131497196]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 22, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D3/Node3D2/Node3D3/Node3D" unique_id=1508608905 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D2/Node3D3/Node3D/lamp" unique_id=466153678]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D3/Node3D2/Node3D3/Node3D" unique_id=820132994 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D2/Node3D3/Node3D/lamp2" unique_id=903524493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D3/Node3D2/Node3D3" unique_id=1838135888]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 18.525, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D3/Node3D2/Node3D3/Node3D2" unique_id=1868058483 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D2/Node3D3/Node3D2/lamp" unique_id=1678899403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D3/Node3D2/Node3D3/Node3D2" unique_id=1406464923 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D2/Node3D3/Node3D2/lamp2" unique_id=1041849185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D3" unique_id=547735345]
+
+[node name="Node3D4" type="Node3D" parent="Lamp/Node3D3/Node3D" unique_id=1092111406]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.025, 0, 0)
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D3/Node3D/Node3D4" unique_id=1269145232]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 22, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D3/Node3D/Node3D4/Node3D" unique_id=131308604 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D/Node3D4/Node3D/lamp" unique_id=1524706018]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D3/Node3D/Node3D4/Node3D" unique_id=399687477 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D/Node3D4/Node3D/lamp2" unique_id=796831787]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D3/Node3D/Node3D4" unique_id=48330678]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 18.525, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D3/Node3D/Node3D4/Node3D2" unique_id=1727264329 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D/Node3D4/Node3D2/lamp" unique_id=2108605664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D3/Node3D/Node3D4/Node3D2" unique_id=979632193 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D/Node3D4/Node3D2/lamp2" unique_id=1959732452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D3" type="Node3D" parent="Lamp/Node3D3/Node3D" unique_id=1715210722]
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D3/Node3D/Node3D3" unique_id=182900191]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 22, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D3/Node3D/Node3D3/Node3D" unique_id=1205517968 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D/Node3D3/Node3D/lamp" unique_id=700691764]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D3/Node3D/Node3D3/Node3D" unique_id=1900236566 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D/Node3D3/Node3D/lamp2" unique_id=1818511007]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D3/Node3D/Node3D3" unique_id=554813513]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 18.525, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D3/Node3D/Node3D3/Node3D2" unique_id=354241602 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D/Node3D3/Node3D2/lamp" unique_id=284195999]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D3/Node3D/Node3D3/Node3D2" unique_id=1152211254 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D3/Node3D/Node3D3/Node3D2/lamp2" unique_id=568437443]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D4" type="Node3D" parent="Lamp" unique_id=1335212348]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.19, 0, 0)
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D4" unique_id=944568339]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.895, 0, 0)
+
+[node name="Node3D4" type="Node3D" parent="Lamp/Node3D4/Node3D2" unique_id=1511612802]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.025, 0, 0)
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D4/Node3D2/Node3D4" unique_id=1980936703]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 22, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D4/Node3D2/Node3D4/Node3D" unique_id=1404171899 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D2/Node3D4/Node3D/lamp" unique_id=1799185668]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D4/Node3D2/Node3D4/Node3D" unique_id=1607306997 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D2/Node3D4/Node3D/lamp2" unique_id=1704427841]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D4/Node3D2/Node3D4" unique_id=1948876373]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 18.525, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D4/Node3D2/Node3D4/Node3D2" unique_id=2069503444 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D2/Node3D4/Node3D2/lamp" unique_id=827422757]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D4/Node3D2/Node3D4/Node3D2" unique_id=2137037907 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D2/Node3D4/Node3D2/lamp2" unique_id=993380790]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D3" type="Node3D" parent="Lamp/Node3D4/Node3D2" unique_id=807892879]
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D4/Node3D2/Node3D3" unique_id=781322934]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 22, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D4/Node3D2/Node3D3/Node3D" unique_id=491652666 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D2/Node3D3/Node3D/lamp" unique_id=1043227404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D4/Node3D2/Node3D3/Node3D" unique_id=1199661280 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D2/Node3D3/Node3D/lamp2" unique_id=1567397343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D4/Node3D2/Node3D3" unique_id=1819111830]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 18.525, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D4/Node3D2/Node3D3/Node3D2" unique_id=1571515913 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D2/Node3D3/Node3D2/lamp" unique_id=1769608705]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D4/Node3D2/Node3D3/Node3D2" unique_id=983659814 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D2/Node3D3/Node3D2/lamp2" unique_id=657901610]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D4" unique_id=609683342]
+
+[node name="Node3D4" type="Node3D" parent="Lamp/Node3D4/Node3D" unique_id=664138091]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.025, 0, 0)
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D4/Node3D/Node3D4" unique_id=2113042282]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 22, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D4/Node3D/Node3D4/Node3D" unique_id=2022130106 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D/Node3D4/Node3D/lamp" unique_id=1024950675]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D4/Node3D/Node3D4/Node3D" unique_id=1775105275 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D/Node3D4/Node3D/lamp2" unique_id=594129945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D4/Node3D/Node3D4" unique_id=548426430]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 18.525, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D4/Node3D/Node3D4/Node3D2" unique_id=2051578622 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D/Node3D4/Node3D2/lamp" unique_id=77120972]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D4/Node3D/Node3D4/Node3D2" unique_id=181289189 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D/Node3D4/Node3D2/lamp2" unique_id=1339559822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D3" type="Node3D" parent="Lamp/Node3D4/Node3D" unique_id=573491019]
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D4/Node3D/Node3D3" unique_id=430693844]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 22, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D4/Node3D/Node3D3/Node3D" unique_id=1473009869 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D/Node3D3/Node3D/lamp" unique_id=693777464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D4/Node3D/Node3D3/Node3D" unique_id=1334438295 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D/Node3D3/Node3D/lamp2" unique_id=1570365142]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D4/Node3D/Node3D3" unique_id=644808242]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 18.525, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D4/Node3D/Node3D3/Node3D2" unique_id=407432834 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D/Node3D3/Node3D2/lamp" unique_id=224664575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D4/Node3D/Node3D3/Node3D2" unique_id=1926554992 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D4/Node3D/Node3D3/Node3D2/lamp2" unique_id=2028878360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D5" type="Node3D" parent="Lamp" unique_id=319626104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.9, 0, 0)
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D5" unique_id=286483351]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.895, 0, 0)
+
+[node name="Node3D4" type="Node3D" parent="Lamp/Node3D5/Node3D2" unique_id=1732607083]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.025, 0, 0)
+
+[node name="Node3D3" type="Node3D" parent="Lamp/Node3D5/Node3D2" unique_id=634394673]
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D5/Node3D2/Node3D3" unique_id=464605328]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 22, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D5/Node3D2/Node3D3/Node3D" unique_id=175155050 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D5/Node3D2/Node3D3/Node3D/lamp" unique_id=1176616080]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D5/Node3D2/Node3D3/Node3D" unique_id=1237329648 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D5/Node3D2/Node3D3/Node3D/lamp2" unique_id=1580142130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D5" unique_id=1889449695]
+
+[node name="Node3D4" type="Node3D" parent="Lamp/Node3D5/Node3D" unique_id=1715227604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.025, 0, 0)
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D5/Node3D/Node3D4" unique_id=645159083]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 22, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D5/Node3D/Node3D4/Node3D" unique_id=30252434 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D5/Node3D/Node3D4/Node3D/lamp" unique_id=1783443891]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D5/Node3D/Node3D4/Node3D" unique_id=357058434 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D5/Node3D/Node3D4/Node3D/lamp2" unique_id=539496305]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D5/Node3D/Node3D4" unique_id=513203624]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 18.525, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D5/Node3D/Node3D4/Node3D2" unique_id=1663301096 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D5/Node3D/Node3D4/Node3D2/lamp" unique_id=205061458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D5/Node3D/Node3D4/Node3D2" unique_id=737679185 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D5/Node3D/Node3D4/Node3D2/lamp2" unique_id=1965422932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D3" type="Node3D" parent="Lamp/Node3D5/Node3D" unique_id=1432890523]
+
+[node name="Node3D" type="Node3D" parent="Lamp/Node3D5/Node3D/Node3D3" unique_id=1790829907]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 22, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D5/Node3D/Node3D3/Node3D" unique_id=2098987237 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D5/Node3D/Node3D3/Node3D/lamp" unique_id=715001814]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D5/Node3D/Node3D3/Node3D" unique_id=1841899251 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D5/Node3D/Node3D3/Node3D/lamp2" unique_id=717373170]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Node3D2" type="Node3D" parent="Lamp/Node3D5/Node3D/Node3D3" unique_id=653232231]
+transform = Transform3D(0.99999535, -0.0026708897, 0.0014583789, 0.0026673083, 0.99999344, 0.002456311, -0.0014649188, -0.002452416, 0.99999595, 18.525, 2, -2.075)
+
+[node name="lamp" parent="Lamp/Node3D5/Node3D/Node3D3/Node3D2" unique_id=931978 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D5/Node3D/Node3D3/Node3D2/lamp" unique_id=61062066]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="lamp2" parent="Lamp/Node3D5/Node3D/Node3D3/Node3D2" unique_id=1223827277 instance=ExtResource("2_kbmnf")]
+transform = Transform3D(1, 2.737579e-10, 0, -2.2873792e-10, 1, 0, -1.1641532e-10, 2.3283064e-10, 1, -0.005788803, -0.0096895695, 3.950984)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamp/Node3D5/Node3D/Node3D3/Node3D2/lamp2" unique_id=528320430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.67, 0)
+
+[node name="Win Area" parent="." unique_id=167464189 instance=ExtResource("3_gpsl1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.145, 11.62, 0)
+sceneName = "Playground"
